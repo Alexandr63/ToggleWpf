@@ -1,1 +1,3 @@
-# Alexandr63-ToggleWpf
+# WPF переключатель
+
+![Пример](example.png)

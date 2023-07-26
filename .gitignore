@@ -1,0 +1,6 @@
+/src/ToggleControl/bin
+/src/ToggleControl/obj
+/src/ToggleControlTest/bin
+/src/ToggleControlTest/obj
+/src/.vs
+/src/ToggleControlTest/*.user

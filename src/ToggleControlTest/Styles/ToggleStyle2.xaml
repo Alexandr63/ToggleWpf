@@ -1,0 +1,41 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:toggleControl="clr-namespace:ToggleControl;assembly=ToggleControl">
+    <Style TargetType="{x:Type toggleControl:Toggle}">
+        <Setter Property="Background" Value="LightGray" />
+        <Setter Property="BorderBrush" Value="#333333" />
+        <Setter Property="BorderThickness" Value="3" />
+
+        <Setter Property="SwitcherColor" Value="#333333" />
+        <Setter Property="SwitcherMargin" Value="2" />
+
+        <Setter Property="CheckIconColor" Value="DarkGreen" />
+        <Setter Property="UncheckIconColor" Value="DarkRed" />
+
+        <Setter Property="Foreground" Value="#333333" />
+        <Setter Property="FontFamily" Value="Consolas" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontStretch" Value="Expanded" />
+        <Setter Property="FontStyle" Value="Oblique" />
+        <Setter Property="FontWeight" Value="ExtraBold" />
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="BorderBrush" Value="Black" />
+
+                <Setter Property="SwitcherColor" Value="Black" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+                <Setter Property="Background" Value="Silver" />
+                <Setter Property="BorderBrush" Value="DimGray" />
+
+                <Setter Property="SwitcherColor" Value="DimGray" />
+
+                <Setter Property="CheckIconColor" Value="DarkSeaGreen" />
+                <Setter Property="UncheckIconColor" Value="IndianRed" />
+
+                <Setter Property="Foreground" Value="Gray" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

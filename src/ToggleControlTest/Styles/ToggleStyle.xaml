@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:toggleControl="clr-namespace:ToggleControl;assembly=ToggleControl">
+    <Style TargetType="{x:Type toggleControl:Toggle}">
+        <Setter Property="Opacity" Value="0.8" />
+        <Setter Property="Background" Value="#FFDD2D" />
+        <Setter Property="BorderThickness" Value="0" />
+
+        <Setter Property="SwitcherColor" Value="#121212" />
+        <Setter Property="SwitcherMargin" Value="6" />
+
+        <Setter Property="CheckIconColor" Value="#121212" />
+        <Setter Property="UncheckIconColor" Value="#9A9A9A" />
+
+        <Setter Property="Foreground" Value="#E4E4E4" />
+        <Setter Property="FontFamily" Value="Consolas" />
+        <Setter Property="FontSize" Value="16" />
+
+        <Style.Triggers>
+            <Trigger Property="IsChecked" Value="False">
+                <Setter Property="Background" Value="#363636" />
+            </Trigger>
+
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Opacity" Value="0.56" />
+            </Trigger>
+
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Opacity" Value="1" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>
